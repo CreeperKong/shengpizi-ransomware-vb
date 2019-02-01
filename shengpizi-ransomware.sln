@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "shengpizi-ransomware", "shengpizi-ransomware\shengpizi-ransomware.vbproj", "{27A58248-ACA7-45E8-9C7E-7D4621DF0298}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Debug|x86.ActiveCfg = Debug|x86
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Debug|x86.Build.0 = Debug|x86
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Release|x86.ActiveCfg = Release|x86
+		{27A58248-ACA7-45E8-9C7E-7D4621DF0298}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66959281-98EC-4532-A73C-18C0EDAA4BBB}
+	EndGlobalSection
+EndGlobal
