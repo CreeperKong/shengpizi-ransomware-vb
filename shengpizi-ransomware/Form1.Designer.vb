@@ -64,7 +64,7 @@ Partial Class Form1
         'Button2
         '
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button2.Location = New System.Drawing.Point(514, 385)
+        Me.Button2.Location = New System.Drawing.Point(508, 375)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(189, 119)
         Me.Button2.TabIndex = 3
