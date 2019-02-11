@@ -51,6 +51,6 @@ OR = ResponseYes;
 NtRaiseHardError(ErrorCode, 0, 0, 0, OptionShutdownSystem, &OR);
 }
 int main() {
-CallBlueScreen(0xc0000520);//括号内为你想要的蓝屏错误码
+CallBlueScreen(0xc2333333);//括号内为你想要的蓝屏错误码
 }
 
